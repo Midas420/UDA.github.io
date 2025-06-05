@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CyberSentinel - CyberSecurity Society</title>
+<style>
+  /* Reset some default */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f2027;  /* dark gradient base */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+  a {
+    text-decoration: none;
+    color: #00ffa8;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #00c37a;
+  }
+  header {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #00ffa8;
+  }
+  nav {
+    margin-top: 0.5rem;
+  }
+  nav a {
+    margin: 0 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+    background: rgba(255,255,255,0.05);
+    text-align: center;
+    gap: 1.5rem;
+    min-height: 70vh;
+  }
+  .hero img {
+    width: 300px;
+    max-width: 90vw;
+    border-radius: 12px;
+    border: 2px solid #00ffa8;
+    background: #222;
+  }
+  .hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
+  }
+  .hero p {
+    max-width: 600px;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    color: #d1f5e9;
+  }
+  section {
+    padding: 4rem 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  section h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #00ffa8;
+  }
+  section p{
+    font-size:1.3rem;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2rem;
+  }
+  .feature-item {
+    background: rgba(255,255,255,0.07);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffa8aa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  .feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00ffa8ff;
+  }
+  .feature-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    background: #111;
+    border: 1.5px solid #00ffa8;
+  }
+  .feature-item h4 {
+    margin: 0 0 0.7rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .feature-item p {
+    text-align: center;
+    font-size: 1rem;
+    color: #c1f3d3;
+  }
+  .contact {
+    background: rgba(0,255,168,0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    color: #0d3c1a;
+  }
+  .contact h3 {
+    margin-bottom: 1rem;
+    color: #009a58;
+  }
+  .contact p {
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: #00ffa8;
+    color: #00331a;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  .btn-primary:hover {
+    background: #00c37a;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background: rgba(0,0,0,0.6);
+    color: #666;
+    margin-top: 3rem;
+  }
+
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    .hero {
+      flex-direction: row;
+      text-align: left;
+      gap: 4rem;
+      padding: 6rem 2rem;
+    }
+    .hero img {
+      flex-shrink: 0;
+    }
+    .hero-content {
+      max-width: 600px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>CyberSentinel</h1>
+  <nav>
+    <a href="#about">Info</a>
+    <a href="#features">Focus</a>
+    <a href="#contact">Unisciti</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="cyber_sentinel_logo.jpg" alt="CyberSentinel Logo Placeholder" />
+  <div class="hero-content">
+    <h2>Proteggere insieme la frontiera digitale</h2>
+    <p>Benvenuti a CyberSentinel, la principale società di sicurezza informatica dedicata a migliorare la conoscenza, le competenze e la consapevolezza in materia di sicurezza informatica. Unitevi a noi per proteggere oggi le tecnologie di domani..</p>
+  </div>
+</section>
+
+<section id="about">
+  <h3>Info su CyberSentinel</h3>
+  <p>CyberSentinel è una comunità guidata da studenti appassionati di tutto ciò che riguarda la sicurezza informatica. Dall'hacking etico e l'informatica forense alla privacy e allo sviluppo di policy, promuoviamo l'apprendimento attraverso workshop, conferenze e progetti collaborativi. La nostra missione è fornire ai membri competenze e conoscenze per difendere e innovare nel cyberspazio..</p>
+</section>
+
+<section id="features">
+  <h3>Aree Focus</h3>
+  <div class="features">
+    <article class="feature-item">
+      <img src="shield.jpg" alt="Shield Icon Placeholder" />
+      <h4>Ethical Hacking</h4>
+      <p>Test di penetrazion e vulnerabilità tecniche assestate da specialisti.</p>
+    </article>
+    <article class="feature-item">
+      <img src="glass.png" alt="Magnifying Glass Icon Placeholder" />
+      <h4>Digital Forensics</h4>
+      <p>Esplora strumenti e metodi forensi per analizzare gli incidenti informatici e recuperare dati critici.</p>
+    </article>
+    <article class="feature-item">
+      <img src="pngtree-vector-lock-icon-png-image_318067.jpg" alt="Lock Icon Placeholder" />
+      <h4>Privacy & Encryption</h4>
+      <p>Approfondisci la crittografia, i protocolli di comunicazione sicuri e le migliori pratiche per proteggere le informazioni.</p>
+    </article>
+    <article class="feature-item">
+      <img src="megaphone.jpg" alt="Megaphone Icon Placeholder" />
+      <h4>Community & Events</h4>
+      <p></p>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h3>Become a CyberSentinel</h3>
+  <p></p>
+  <button class="btn-primary" onclick="alert('Thanks for your interest! Please contact us at contact@cybersentinel.org')">Contact Us</button>
+</section>
+
+<footer>
+  &copy; 2024 CyberSentinel SPA - CyberSecurity Society. All rights reserved.
+</footer>
+
+</body>
+</html>
+
